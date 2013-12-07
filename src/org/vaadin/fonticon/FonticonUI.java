@@ -44,13 +44,13 @@ public class FonticonUI extends UI {
 
         // Intro label w/ various icons
         Label label = new Label(
-                Icon.info_sign.variant(IconVariant.PULL_LEFT,
+                Icon.info.variant(IconVariant.PULL_LEFT,
                         IconVariant.SIZE_4X)
                         + "This demonstrates some of the use-cases for font icons in Vaadin.<br/>"
-                        + Icon.warning_sign
+                        + Icon.info
                         + " Please note that a font-icon is not a <code>Resource</code>, and can not be used as a"
                         + " regular Vaadin icon using <code>setIcon()</code>.<br> Instead, you can add a font-icon anywhere "
-                        + Icon.exclamation_sign
+                        + Icon.exclamation_triangle
                         + " where you can use formatted HTML, including tooltips.",
                 ContentMode.HTML);
         layout.addComponent(label);
