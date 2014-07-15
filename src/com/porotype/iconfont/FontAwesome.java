@@ -29,7 +29,7 @@ import com.vaadin.server.Resource;
  */
 public class FontAwesome {
 
-    public static final String CDN = "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css";
+    public static final String CDN = "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css";
 
     public static void load() {
         load(new ExternalResource(CDN));
@@ -195,6 +195,7 @@ public class FontAwesome {
     	search_minus("&#xf010;"), //
     	power_off("&#xf011;"), //
     	signal("&#xf012;"), //
+    	gear("&#xf013;"),
     	cog("&#xf013;"), //
     	trash_o("&#xf014;"), //
     	home("&#xf015;"), //
@@ -206,6 +207,7 @@ public class FontAwesome {
     	arrow_circle_o_up("&#xf01b;"), //
     	inbox("&#xf01c;"), //
     	play_circle_o("&#xf01d;"), //
+    	rotate_right("&#xf01e;"),
     	repeat("&#xf01e;"), //
     	refresh("&#xf021;"), //
     	list_alt("&#xf022;"), //
@@ -233,14 +235,18 @@ public class FontAwesome {
     	align_right("&#xf038;"), //
     	align_justify("&#xf039;"), //
     	list("&#xf03a;"), //
+    	dedent("&#xf03b;"),
     	outdent("&#xf03b;"), //
     	indent("&#xf03c;"), //
     	video_camera("&#xf03d;"), //
+    	photo("&#xf03e;"),
+    	image("&#xf03e;"),
     	picture_o("&#xf03e;"), //
     	pencil("&#xf040;"), //
     	map_marker("&#xf041;"), //
     	adjust("&#xf042;"), //
     	tint("&#xf043;"), //
+    	edit("&#xf044;"),
     	pencil_square_o("&#xf044;"), //
     	share_square_o("&#xf045;"), //
     	check_square_o("&#xf046;"), //
@@ -271,6 +277,7 @@ public class FontAwesome {
     	arrow_right("&#xf061;"), //
     	arrow_up("&#xf062;"), //
     	arrow_down("&#xf063;"), //
+    	mail_forward("&#xf064;"),
     	share("&#xf064;"), //
     	expand("&#xf065;"), //
     	compress("&#xf066;"), //
@@ -283,6 +290,7 @@ public class FontAwesome {
     	fire("&#xf06d;"), //
     	eye("&#xf06e;"), //
     	eye_slash("&#xf070;"), //
+    	warning("&#xf071;"),
     	exclamation_triangle("&#xf071;"), //
     	plane("&#xf072;"), //
     	calendar("&#xf073;"), //
@@ -302,6 +310,7 @@ public class FontAwesome {
     	facebook_square("&#xf082;"), //
     	camera_retro("&#xf083;"), //
     	key("&#xf084;"), //
+    	gears("&#xf085;"),
     	cogs("&#xf085;"), //
     	comments("&#xf086;"), //
     	thumbs_o_up("&#xf087;"), //
@@ -345,15 +354,22 @@ public class FontAwesome {
     	filter("&#xf0b0;"), //
     	briefcase("&#xf0b1;"), //
     	arrows_alt("&#xf0b2;"), //
+    	group("&#xf0c0;"),
     	users("&#xf0c0;"), //
+    	chain("&#xf0c1;"),
     	link("&#xf0c1;"), //
     	cloud("&#xf0c2;"), //
     	flask("&#xf0c3;"), //
+    	cut("&#xf0c4;"),
     	scissors("&#xf0c4;"), //
+    	copy("&#xf0c5;"),
     	files_o("&#xf0c5;"), //
     	paperclip("&#xf0c6;"), //
+    	save("&#xf0c7;"),
     	floppy_o("&#xf0c7;"), //
     	square("&#xf0c8;"), //
+    	navicon("&#xf0c9;"),
+    	reorder("&#xf0c9;"),
     	bars("&#xf0c9;"), //
     	list_ul("&#xf0ca;"), //
     	list_ol("&#xf0cb;"), //
@@ -372,19 +388,27 @@ public class FontAwesome {
     	caret_left("&#xf0d9;"), //
     	caret_right("&#xf0da;"), //
     	columns("&#xf0db;"), //
+    	unsorted("&#xf0dc;"),
     	sort("&#xf0dc;"), //
-    	sort_asc("&#xf0dd;"), //
-    	sort_desc("&#xf0de;"), //
+    	sort_down("&#xf0dd;"),
+    	sort_desc("&#xf0dd;"), //
+    	sort_up("&#xf0de;"),
+    	sort_asc("&#xf0de;"), //
     	envelope("&#xf0e0;"), //
     	linkedin("&#xf0e1;"), //
+    	rotate_left("&#xf0e2;"),
     	undo("&#xf0e2;"), //
+    	legal("&#xf0e3;"),
     	gavel("&#xf0e3;"), //
+    	dashboard("&#xf0e4;"),
     	tachometer("&#xf0e4;"), //
     	comment_o("&#xf0e5;"), //
     	comments_o("&#xf0e6;"), //
+    	flash("&#xf0e7;"),
     	bolt("&#xf0e7;"), //
     	sitemap("&#xf0e8;"), //
     	umbrella("&#xf0e9;"), //
+    	paste("&#xf0ea;"),
     	clipboard("&#xf0ea;"), //
     	lightbulb_o("&#xf0eb;"), //
     	exchange("&#xf0ec;"), //
@@ -416,12 +440,14 @@ public class FontAwesome {
     	desktop("&#xf108;"), //
     	laptop("&#xf109;"), //
     	tablet("&#xf10a;"), //
+    	mobile_phone("&#xf10b;"),
     	mobile("&#xf10b;"), //
     	circle_o("&#xf10c;"), //
     	quote_left("&#xf10d;"), //
     	quote_right("&#xf10e;"), //
     	spinner("&#xf110;"), //
     	circle("&#xf111;"), //
+    	mail_reply("&#xf112;"),
     	reply("&#xf112;"), //
     	github_alt("&#xf113;"), //
     	folder_o("&#xf114;"), //
@@ -435,12 +461,15 @@ public class FontAwesome {
     	flag_checkered("&#xf11e;"), //
     	terminal("&#xf120;"), //
     	code("&#xf121;"), //
+    	mail_reply_all("&#xf122;"),
     	reply_all("&#xf122;"), //
-    	mail_reply_all("&#xf122;"), //
+    	star_half_empty("&#xf123;"),
+    	star_half_full("&#xf123;"),
     	star_half_o("&#xf123;"), //
     	location_arrow("&#xf124;"), //
     	crop("&#xf125;"), //
     	code_fork("&#xf126;"), //
+    	unlink("&#xf127;"),
     	chain_broken("&#xf127;"), //
     	question("&#xf128;"), //
     	info("&#xf129;"), //
@@ -479,16 +508,29 @@ public class FontAwesome {
     	external_link_square("&#xf14c;"), //
     	share_square("&#xf14d;"), //
     	compass("&#xf14e;"), //
+    	toggle_down("&#xf150;"),
     	caret_square_o_down("&#xf150;"), //
+    	toggle_up("&#xf151;"),
     	caret_square_o_up("&#xf151;"), //
+    	toggle_right("&#xf152;"),
     	caret_square_o_right("&#xf152;"), //
+    	euro("&#xf153;"),
     	eur("&#xf153;"), //
     	gbp("&#xf154;"), //
+    	dollar("&#xf155;"),
     	usd("&#xf155;"), //
+    	rupee("&#xf156;"),
     	inr("&#xf156;"), //
+    	cny("&#xf157;"),
+    	rmb("&#xf157;"),
+    	yen("&#xf157;"),
     	jpy("&#xf157;"), //
+    	ruble("&#xf158;"),
+    	rouble("&#xf158;"),
     	rub("&#xf158;"), //
+    	won("&#xf159;"),
     	krw("&#xf159;"), //
+    	bitcoin("&#xf15a;"),
     	btc("&#xf15a;"), //
     	file("&#xf15b;"), //
     	file_text("&#xf15c;"), //
@@ -540,11 +582,105 @@ public class FontAwesome {
     	stack_exchange("&#xf18d;"), //
     	arrow_circle_o_right("&#xf18e;"), //
     	arrow_circle_o_left("&#xf190;"), //
+    	toggle_left("&#xf191;"),
     	caret_square_o_left("&#xf191;"), //
     	dot_circle_o("&#xf192;"), //
     	wheelchair("&#xf193;"), //
     	vimeo_square("&#xf194;"), //
-    	try_FI("&#xf195;");
+    	turkish_lira("&#xf195;"),
+    	try_FI("&#xf195;"), //
+    	plus_square_o("&#xf196;"), //
+    	space_shuttle("&#xf197;"), //
+    	slack("&#xf198;"), //
+    	envelope_square("&#xf199;"), //
+    	wordpress("&#xf19a;"), //
+    	openid("&#xf19b;"), //
+    	institution("&#xf19c;"),
+    	bank("&#xf19c;"),
+    	university("&#xf19c;"), //
+    	mortar_board("&#xf19d;"),
+    	graduation_cap("&#xf19d;"), //
+    	yahoo("&#xf19e;"), //
+    	google("&#xf1a0;"), //
+    	reddit("&#xf1a1;"), //
+    	reddit_square("&#xf1a2;"), //
+    	stumbleupon_circle("&#xf1a3;"), //
+    	stumbleupon("&#xf1a4;"), //
+    	delicious("&#xf1a5;"), //
+    	digg("&#xf1a6;"), //
+    	pied_piper_square("&#xf1a7;"),
+    	pied_piper("&#xf1a7;"), //
+    	pied_piper_alt("&#xf1a8;"), //
+    	drupal("&#xf1a9;"), //
+    	joomla("&#xf1aa;"), //
+    	language("&#xf1ab;"), //
+    	fax("&#xf1ac;"), //
+    	building("&#xf1ad;"), //
+    	child("&#xf1ae;"), //
+    	paw("&#xf1b0;"), //
+    	spoon("&#xf1b1;"), //
+    	cube("&#xf1b2;"), //
+    	cubes("&#xf1b3;"), //
+    	behance("&#xf1b4;"), //
+    	behance_square("&#xf1b5;"), //
+    	steam("&#xf1b6;"), //
+    	steam_square("&#xf1b7;"), //
+    	recycle("&#xf1b8;"), //
+    	automobile("&#xf1b9;"),
+    	car("&#xf1b9;"), //
+    	cab("&#xf1ba;"),
+    	taxi("&#xf1ba;"), //
+    	tree("&#xf1bb;"), //
+    	spotify("&#xf1bc;"), //
+    	deviantart("&#xf1bd;"), //
+    	soundcloud("&#xf1be;"), //
+    	database("&#xf1c0;"), //
+    	file_pdf_o("&#xf1c1;"), //
+    	file_word_o("&#xf1c2;"), //
+    	file_excel_o("&#xf1c3;"), //
+    	file_powerpoint_o("&#xf1c4;"), //
+    	file_photo_o("&#xf1c5;"),
+    	file_picture_o("&#xf1c5;"),
+    	file_image_o("&#xf1c5;"), //
+    	file_zip_o("&#xf1c6;"),
+    	file_archive_o("&#xf1c6;"), //
+    	file_sound_o("&#xf1c7;"),
+    	file_audio_o("&#xf1c7;"), //
+    	file_movie_o("&#xf1c8;"),
+    	file_video_o("&#xf1c8;"), //
+    	file_code_o("&#xf1c9;"), //
+    	vine("&#xf1ca;"), //
+    	codepen("&#xf1cb;"), //
+    	jsfiddle("&#xf1cc;"), //
+    	life_bouy("&#xf1cd;"),
+    	life_saver("&#xf1cd;"),
+    	support("&#xf1cd;"),
+    	life_ring("&#xf1cd;"), //
+    	circle_o_notch("&#xf1ce;"), //
+    	ra("&#xf1d0;"),
+    	rebel("&#xf1d0;"), //
+    	ge("&#xf1d1;"),
+    	empire("&#xf1d1;"), //
+    	git_square("&#xf1d2;"), //
+    	git("&#xf1d3;"), //
+    	hacker_news("&#xf1d4;"), //
+    	tencent_weibo("&#xf1d5;"), //
+    	qq("&#xf1d6;"), //
+    	wechat("&#xf1d7;"),
+    	weixin("&#xf1d7;"), //
+    	send("&#xf1d8;"),
+    	paper_plane("&#xf1d8;"), //
+    	send_o("&#xf1d9;"),
+    	paper_plane_o("&#xf1d9;"), //
+    	history("&#xf1da;"), //
+    	circle_thin("&#xf1db;"), //
+    	header("&#xf1dc;"), //
+    	paragraph("&#xf1dd;"), //
+    	sliders("&#xf1de;"), //
+    	share_alt("&#xf1e0;"), //
+    	share_alt_square("&#xf1e1;"), //
+    	bomb("&#xf1e2;"); //
+
 
         private final String id;
 

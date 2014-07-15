@@ -9,6 +9,7 @@ import com.porotype.iconfont.FontAwesome.IconVariant;
 import com.vaadin.data.Property.ValueChangeEvent;
 import com.vaadin.data.Property.ValueChangeListener;
 import com.vaadin.server.VaadinRequest;
+import com.vaadin.shared.ui.MarginInfo;
 import com.vaadin.shared.ui.label.ContentMode;
 import com.vaadin.ui.AbstractSelect;
 import com.vaadin.ui.Button;
@@ -20,6 +21,7 @@ import com.vaadin.ui.NativeButton;
 import com.vaadin.ui.TwinColSelect;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
+import com.vaadin.ui.themes.BaseTheme;
 import com.vaadin.ui.themes.Reindeer;
 
 /**
@@ -110,12 +112,28 @@ public class FonticonUI extends UI {
         final CssLayout icons = new CssLayout();
         icons.setCaption("ALL THE THINGS!!!");
         layout.addComponent(icons);
+        
+        HorizontalLayout hLayout = new HorizontalLayout();
+        hLayout.setSpacing(true);
+        hLayout.setMargin(new MarginInfo(false, true, false, true));
+        int cols = 8;
         for (Icon i : Icon.values()) {
-            Button b = new Button(i + " " + i.name());
-            b.setHtmlContentAllowed(true);
-            icons.addComponent(b);
+        	if(cols == 8){
+        		hLayout = new HorizontalLayout();
+        		cols = 0;
+        	}
+        	Label b = new Label(i + " " + i.name(), ContentMode.HTML);
+        	hLayout.addComponent(b);
+        	b.setWidth("150px");
             b.setDescription(i + " " + i.name());
+            if(cols == 7){
+            	layout.addComponent(hLayout);
+            }
+            cols++;
+            
         }
+        if(cols < 8)
+        	layout.addComponent(hLayout);
 
     }
 
